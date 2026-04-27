@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="google-site-verification" content="TkFsYV4y-eyut5_V276wDkOGipM635pL9NgOOyUlSO4" />
+
+<meta name="description" content="LUVARÉN — Bespoke tailoring and custom garments of unparalleled craftsmanship. Crafted Precision. Defined Elegance.">
+<meta name="keywords" content="LUVARÉN, bespoke tailor Jakarta, custom suit Indonesia, tailor made suit, blazer custom, batik premium, tailoring premium, atelier Jakarta">
+<meta name="author" content="LUVARÉN Atelier">
+<meta name="theme-color" content="#8B0000">
+<link rel="icon" type="image/png" href="https://i.imgur.com/CMYxUir.png">
+<link rel="apple-touch-icon" href="https://i.imgur.com/CMYxUir.png">
+
+<!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LUVARÉN">
+<meta property="og:title" content="LUVARÉN — Crafted Precision. Defined Elegance.">
+<meta property="og:description" content="Bespoke atelier di Jakarta. Setiap jahitan adalah deklarasi karakter — 800+ busana bespoke, 100% hand-stitched, dengan kain premium Eropa & batik pilihan.">
+<meta property="og:image" content="https://i.imgur.com/CMYxUir.png">
+<meta property="og:image:secure_url" content="https://i.imgur.com/CMYxUir.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="LUVARÉN — Bespoke Atelier">
+<meta property="og:locale" content="id_ID">
+<meta property="og:locale:alternate" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LUVARÉN — Crafted Precision. Defined Elegance.">
+<meta name="twitter:description" content="Bespoke atelier di Jakarta. Setiap jahitan adalah deklarasi karakter — 800+ busana bespoke, 100% hand-stitched.">
+<meta name="twitter:image" content="https://i.imgur.com/CMYxUir.png">
+<meta name="twitter:image:alt" content="LUVARÉN — Bespoke Atelier">
+
+<title>LUVARÉN — Crafted Precision. Defined Elegance.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #000000;
+    --near-black: #080808;
+    --card: #0f0f0f;
+    --red: #8B0000;
+    --gold: #C5A46D;
+    --gold-dim: #8a7048;
+    --cream: #f5f0e8;
+    --gray: #888888;
+    --gray-light: #aaaaaa;
+  }
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--black); color: var(--cream); font-family: 'Montserrat', sans-serif; font-weight: 300; line-height: 1.7; overflow-x: hidden; }
+  ::selection { background: var(--red); color: var(--cream); }
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: var(--black); }
+  ::-webkit-scrollbar-thumb { background: var(--gold-dim); border-radius: 2px; }
+  body::before { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events: none; z-index: 9998; opacity: 0.3; }
+
+  /* TYPOGRAPHY */
+  h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; font-weight: 300; letter-spacing: 0.04em; }
+  .headline { font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1.1; font-weight: 300; }
+  .subhead { font-family: 'Montserrat', sans-serif; font-size: 0.62rem; font-weight: 500; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); }
+  .body-text { font-size: 0.875rem; line-height: 1.9; font-weight: 300; color: var(--gray-light); }
+  .gold-line { width: 60px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); margin: 1.5rem auto; }
+  .gold-line-left { width: 60px; height: 1px; background: linear-gradient(90deg, var(--gold), transparent); margin: 1.5rem 0; }
+  .section-divider { width: 100%; height: 1px; background: linear-gradient(90deg, transparent, var(--gold-dim), transparent); }
+
+  /* NAVBAR */
+  .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1.2rem 4vw; display: flex; align-items: center; justify-content: space-between; transition: background 0.5s, padding 0.4s; }
+  .nav.scrolled { background: rgba(0,0,0,0.97); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); padding: 0.7rem 4vw; border-bottom: 1px solid rgba(197,164,109,0.1); }
+  .nav-logo { display: flex; align-items: center; text-decoration: none; }
+  .nav-logo img { height: 50px; width: auto; object-fit: contain; filter: drop-shadow(0 0 10px rgba(139,0,0,0.4)); transition: filter 0.3s, transform 0.3s; }
+  .nav-logo img:hover { filter: drop-shadow(0 0 16px rgba(197,164,109,0.5)); transform: scale(1.04); }
+  .nav-links { display: flex; align-items: center; gap: 2.5rem; list-style: none; }
+  .nav-links a { font-size: 0.62rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gray-light); text-decoration: none; transition: color 0.3s; position: relative; }
+  .nav-links a::after { content: ''; position: absolute; bottom: -3px; left: 0; width: 0; height: 1px; background: var(--gold); transition: width 0.35s; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-links a:hover::after { width: 100%; }
+  .nav-social { display: flex; align-items: center; gap: 1.2rem; }
+  .nav-social a { color: var(--gray); transition: color 0.3s; display: flex; align-items: center; }
+  .nav-social a:hover { color: var(--gold); }
+  .nav-social svg { width: 16px; height: 16px; fill: currentColor; }
+  .nav-toggle { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+  .nav-toggle span { display: block; width: 24px; height: 1px; background: var(--cream); }
+
+  /* HERO */
+  .hero { position: relative; height: 100vh; min-height: 700px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  .hero-photo { position: absolute; inset: 0; background: url('https://i.imgur.com/JtJvRP6.jpg') center center / cover no-repeat; }
+  .hero-photo::before { content: ''; position: absolute; inset: 0; z-index: 1; background-image: repeating-linear-gradient(0deg, transparent, transparent 60px, rgba(197,164,109,0.015) 60px, rgba(197,164,109,0.015) 61px), repeating-linear-gradient(90deg, transparent, transparent 60px, rgba(197,164,109,0.015) 60px, rgba(197,164,109,0.015) 61px); animation: fabricShift 25s linear infinite; }
+  .hero-photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,0.82) 100%), radial-gradient(ellipse at 30% 50%, rgba(139,0,0,0.12) 0%, transparent 60%); }
+  @keyframes fabricShift { 0% { transform: translate(0,0); } 100% { transform: translate(61px,61px); } }
+  .hero-content { position: relative; z-index: 2; text-align: center; padding: 0 4vw; max-width: 960px; animation: heroFadeIn 1.8s cubic-bezier(0.16,1,0.3,1) forwards; }
+  @keyframes heroFadeIn { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-logo-img { width: clamp(160px, 22vw, 280px); height: auto; margin: 0 auto 2rem; display: block; filter: drop-shadow(0 0 28px rgba(139,0,0,0.55)) brightness(1.08); animation: heroFadeIn 1.8s 0.2s both; }
+  .hero-tagline { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(1.2rem, 2.8vw, 1.7rem); font-weight: 300; color: var(--cream); letter-spacing: 0.1em; margin-bottom: 0.6rem; animation: heroFadeIn 1.8s 0.4s both; text-shadow: 0 2px 20px rgba(0,0,0,0.8); }
+  .hero-sub { font-size: 0.6rem; font-weight: 500; letter-spacing: 0.38em; text-transform: uppercase; color: var(--gold); margin-bottom: 3rem; animation: heroFadeIn 1.8s 0.6s both; }
+  .hero-cta { display: flex; align-items: center; justify-content: center; gap: 1.2rem; flex-wrap: wrap; animation: heroFadeIn 1.8s 0.8s both; }
+  .hero-scroll { position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%); z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; animation: heroFadeIn 1.8s 1.4s both; }
+  .hero-scroll span { font-size: 0.52rem; font-weight: 500; letter-spacing: 0.35em; text-transform: uppercase; color: rgba(197,164,109,0.55); }
+  .scroll-line { width: 1px; height: 44px; background: linear-gradient(180deg, var(--gold), transparent); animation: scrollPulse 2.2s ease-in-out infinite; }
+  @keyframes scrollPulse { 0%,100% { opacity: 0.25; } 50% { opacity: 1; } }
+
+  /* BUTTONS */
+  .btn-primary { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.9rem 2.4rem; background: var(--red); color: var(--cream); font-family: 'Montserrat', sans-serif; font-size: 0.62rem; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; text-decoration: none; border: 1px solid var(--red); transition: all 0.4s cubic-bezier(0.16,1,0.3,1); position: relative; overflow: hidden; cursor: pointer; }
+  .btn-primary::before { content: ''; position: absolute; inset: 0; background: var(--gold); transform: translateX(-100%); transition: transform 0.4s cubic-bezier(0.16,1,0.3,1); }
+  .btn-primary:hover { border-color: var(--gold); color: var(--black); }
+  .btn-primary:hover::before { transform: translateX(0); }
+  .btn-primary span { position: relative; z-index: 1; }
+  .btn-outline { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.9rem 2.4rem; background: transparent; color: var(--cream); font-family: 'Montserrat', sans-serif; font-size: 0.62rem; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; text-decoration: none; border: 1px solid rgba(197,164,109,0.35); transition: all 0.4s; cursor: pointer; }
+  .btn-outline:hover { border-color: var(--gold); color: var(--gold); background: rgba(197,164,109,0.05); }
+
+  /* SECTIONS */
+  section { position: relative; padding: 7rem 8vw; }
+  .section-inner { max-width: 1200px; margin: 0 auto; }
+
+  /* ABOUT */
+  .about { background: var(--near-black); }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
+  .about-img-frame { width: 100%; aspect-ratio: 3/4; position: relative; overflow: hidden; border: 1px solid rgba(197,164,109,0.18); }
+  .about-img-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; transition: transform 0.8s cubic-bezier(0.16,1,0.3,1); filter: brightness(0.88) contrast(1.06); }
+  .about-img-frame:hover img { transform: scale(1.04); }
+  .about-img-frame::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 55%, rgba(0,0,0,0.75) 100%); pointer-events: none; }
+  .about-img-caption { position: absolute; bottom: 1.8rem; left: 1.8rem; z-index: 2; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1rem; color: var(--gold); letter-spacing: 0.05em; }
+  .about-img-corner { position: absolute; width: 22px; height: 22px; border-color: var(--gold); border-style: solid; opacity: 0.5; z-index: 3; }
+  .about-img-corner.tl { top: 0.9rem; left: 0.9rem; border-width: 1px 0 0 1px; }
+  .about-img-corner.tr { top: 0.9rem; right: 0.9rem; border-width: 1px 1px 0 0; }
+  .about-img-corner.bl { bottom: 0.9rem; left: 0.9rem; border-width: 0 0 1px 1px; }
+  .about-img-corner.br { bottom: 0.9rem; right: 0.9rem; border-width: 0 1px 1px 0; }
+  .about-stats { display: grid; grid-template-columns: repeat(2,1fr); gap: 1.5rem; margin-top: 3rem; padding-top: 3rem; border-top: 1px solid rgba(197,164,109,0.12); }
+  .stat-number { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 300; color: var(--gold); line-height: 1; display: block; }
+  .stat-label { font-size: 0.58rem; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gray); margin-top: 0.4rem; display: block; }
+
+  /* SERVICES */
+  .services { background: var(--black); }
+  .services-header { text-align: center; margin-bottom: 5rem; }
+  .services-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; background: rgba(197,164,109,0.07); }
+  .service-card { background: var(--black); padding: 3.5rem 2.5rem; position: relative; overflow: hidden; transition: background 0.4s; }
+  .service-card::before { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--red), transparent); transform: scaleX(0); transition: transform 0.5s cubic-bezier(0.16,1,0.3,1); }
+  .service-card:hover { background: #080000; }
+  .service-card:hover::before { transform: scaleX(1); }
+  .service-icon { width: 48px; height: 48px; margin-bottom: 2rem; opacity: 0.65; transition: opacity 0.3s; }
+  .service-card:hover .service-icon { opacity: 1; }
+  .service-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 400; color: var(--cream); margin-bottom: 1rem; }
+  .service-number { position: absolute; top: 2rem; right: 2rem; font-family: 'Cormorant Garamond', serif; font-size: 4.5rem; font-weight: 300; color: rgba(197,164,109,0.05); line-height: 1; }
+
+  /* PORTFOLIO */
+  .portfolio { background: var(--near-black); }
+  .portfolio-header { text-align: center; margin-bottom: 4rem; }
+  .portfolio-grid { display: grid; grid-template-columns: repeat(12,1fr); gap: 4px; }
+  .portfolio-item { position: relative; overflow: hidden; cursor: pointer; }
+  .portfolio-item:nth-child(1) { grid-column: span 7; }
+  .portfolio-item:nth-child(2) { grid-column: span 5; }
+  .portfolio-item:nth-child(3) { grid-column: span 4; }
+  .portfolio-item:nth-child(4) { grid-column: span 4; }
+  .portfolio-item:nth-child(5) { grid-column: span 4; }
+  .portfolio-img { width: 100%; aspect-ratio: 3/4; position: relative; overflow: hidden; }
+  .portfolio-item:nth-child(1) .portfolio-img { aspect-ratio: 1/1; }
+  .portfolio-img img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; transition: transform 0.9s cubic-bezier(0.16,1,0.3,1), filter 0.6s; filter: brightness(0.92) contrast(1.04) saturate(0.82); }
+  .portfolio-item:hover .portfolio-img img { transform: scale(1.07); filter: brightness(0.72) contrast(1.1) saturate(0.7); }
+  .portfolio-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 35%, rgba(0,0,0,0.9) 100%); opacity: 0; transition: opacity 0.5s; display: flex; align-items: flex-end; padding: 2rem 1.8rem; }
+  .portfolio-item:hover .portfolio-overlay { opacity: 1; }
+  .portfolio-info h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 400; color: var(--cream); }
+  .portfolio-info span { font-size: 0.58rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 0.3rem; }
+  .portfolio-item::after { content: ''; position: absolute; inset: 0; border: 1px solid rgba(197,164,109,0); transition: border-color 0.5s; pointer-events: none; z-index: 2; }
+  .portfolio-item:hover::after { border-color: rgba(197,164,109,0.28); }
+
+  /* WHY */
+  .why { background: var(--black); }
+  .why-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 6rem; align-items: start; }
+  .why-sticky { position: sticky; top: 8rem; }
+  .why-point { padding: 2.5rem 0; border-bottom: 1px solid rgba(197,164,109,0.07); display: grid; grid-template-columns: 3rem 1fr; gap: 1.5rem; align-items: start; transition: padding 0.3s; }
+  .why-point:hover { padding-left: 1rem; }
+  .why-num { font-family: 'Cormorant Garamond', serif; font-size: 0.85rem; color: var(--gold); opacity: 0.55; padding-top: 0.35rem; }
+  .why-point h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; font-weight: 400; color: var(--cream); margin-bottom: 0.6rem; }
+
+  /* TESTIMONIALS */
+  .testimonials { background: var(--near-black); overflow: hidden; }
+  .testimonials-header { text-align: center; margin-bottom: 5rem; }
+  .testi-track { display: flex; gap: 3px; animation: slideLeft 35s linear infinite; }
+  .testi-track:hover { animation-play-state: paused; }
+  @keyframes slideLeft { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .testi-card { min-width: 440px; background: var(--card); border: 1px solid rgba(197,164,109,0.07); padding: 3rem 2.5rem; flex-shrink: 0; position: relative; }
+  .testi-card::before { content: '\201C'; position: absolute; top: 1.5rem; right: 2rem; font-family: 'Cormorant Garamond', serif; font-size: 5rem; color: rgba(139,0,0,0.2); line-height: 1; }
+  .testi-text { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 1.08rem; color: var(--gray-light); line-height: 1.85; margin-bottom: 2rem; }
+  .testi-author { display: flex; align-items: center; gap: 1rem; }
+  .testi-avatar { width: 44px; height: 44px; border-radius: 50%; overflow: hidden; border: 1px solid rgba(197,164,109,0.25); flex-shrink: 0; background: rgba(139,0,0,0.2); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--gold); }
+  .testi-avatar img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+  .testi-name { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.14em; color: var(--cream); text-transform: uppercase; }
+  .testi-role { font-size: 0.62rem; color: var(--gray); letter-spacing: 0.08em; margin-top: 2px; }
+  .testi-stars { margin-bottom: 1.2rem; color: var(--gold); font-size: 0.72rem; letter-spacing: 0.18em; }
+
+  /* SOCIAL */
+  .social { background: var(--black); }
+  .social-header { text-align: center; margin-bottom: 4rem; }
+  .social-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 4px; margin-bottom: 4rem; }
+  .social-post { aspect-ratio: 1; position: relative; overflow: hidden; cursor: pointer; }
+  .social-post img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.7s cubic-bezier(0.16,1,0.3,1), filter 0.5s; filter: brightness(0.85) saturate(0.8); }
+  .social-post:hover img { transform: scale(1.08); filter: brightness(0.62) saturate(0.6); }
+  .social-post-overlay { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.4s; }
+  .social-post:hover .social-post-overlay { opacity: 1; }
+  .social-post-overlay svg { width: 26px; height: 26px; fill: var(--cream); }
+  .social-handles { display: flex; align-items: center; justify-content: center; gap: 3rem; margin-top: 2.5rem; }
+  .social-handle { display: flex; align-items: center; gap: 0.8rem; text-decoration: none; color: var(--gray-light); font-size: 0.72rem; letter-spacing: 0.15em; transition: color 0.3s; }
+  .social-handle:hover { color: var(--gold); }
+  .social-handle svg { width: 18px; height: 18px; fill: currentColor; }
+
+  /* BOOKING */
+  .booking { background: var(--near-black); }
+  .booking-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; }
+  .form-group { margin-bottom: 1.8rem; }
+  .form-label { display: block; font-size: 0.58rem; font-weight: 500; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.6rem; }
+  .form-input, .form-select, .form-textarea { width: 100%; background: transparent; border: none; border-bottom: 1px solid rgba(197,164,109,0.22); padding: 0.75rem 0; color: var(--cream); font-family: 'Montserrat', sans-serif; font-size: 0.85rem; font-weight: 300; outline: none; transition: border-color 0.3s; -webkit-appearance: none; appearance: none; }
+  .form-input::placeholder, .form-textarea::placeholder { color: rgba(255,255,255,0.18); }
+  .form-input:focus, .form-select:focus, .form-textarea:focus { border-color: var(--gold); }
+  .form-select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23C5A46D' d='M8 11L3 6h10z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 0.5rem center; background-size: 16px; cursor: pointer; background-color: transparent; }
+  .form-select option { background: #0f0f0f; color: var(--cream); }
+  .form-textarea { resize: none; height: 100px; }
+
+  /* FOOTER */
+  footer { background: #000; border-top: 1px solid rgba(197,164,109,0.1); padding: 5rem 8vw 2rem; }
+  .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 4rem; max-width: 1200px; margin: 0 auto 4rem; }
+  .footer-logo img { height: 58px; width: auto; filter: drop-shadow(0 0 10px rgba(139,0,0,0.3)); margin-bottom: 1.2rem; display: block; }
+  .footer-tagline { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 0.95rem; color: var(--gray); margin-bottom: 1rem; }
+  .footer-social { display: flex; gap: 1rem; margin-top: 1.5rem; }
+  .footer-social-link { width: 36px; height: 36px; border: 1px solid rgba(197,164,109,0.18); display: flex; align-items: center; justify-content: center; color: var(--gray); transition: all 0.3s; text-decoration: none; }
+  .footer-social-link:hover { border-color: var(--gold); color: var(--gold); background: rgba(197,164,109,0.05); }
+  .footer-social-link svg { width: 15px; height: 15px; fill: currentColor; }
+  .footer-col h4 { font-family: 'Montserrat', sans-serif; font-size: 0.58rem; font-weight: 500; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; }
+  .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
+  .footer-links a { font-size: 0.8rem; color: var(--gray); text-decoration: none; transition: color 0.3s; letter-spacing: 0.05em; }
+  .footer-links a:hover { color: var(--cream); }
+  .footer-contact-item { display: flex; flex-direction: column; gap: 0.25rem; margin-bottom: 1rem; }
+  .footer-contact-item span:first-child { font-size: 0.52rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); opacity: 0.65; }
+  .footer-contact-item span:last-child { font-size: 0.8rem; color: var(--gray-light); }
+  .footer-bottom { max-width: 1200px; margin: 0 auto; padding-top: 2rem; border-top: 1px solid rgba(197,164,109,0.07); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+  .footer-bottom p { font-size: 0.62rem; color: rgba(136,136,136,0.45); letter-spacing: 0.1em; }
+  .footer-bottom-links { display: flex; gap: 2rem; list-style: none; }
+  .footer-bottom-links a { font-size: 0.62rem; color: rgba(136,136,136,0.45); text-decoration: none; letter-spacing: 0.1em; transition: color 0.3s; }
+  .footer-bottom-links a:hover { color: var(--gold); }
+
+  /* WHATSAPP */
+  .wa-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 999; animation: waSlidein 1s 2s cubic-bezier(0.16,1,0.3,1) both; }
+  @keyframes waSlidein { from { opacity: 0; transform: translateY(24px) scale(0.75); } to { opacity: 1; transform: translateY(0) scale(1); } }
+  .wa-btn { display: flex; align-items: center; background: #000; border: 1px solid rgba(139,0,0,0.5); border-radius: 999px; padding: 0.8rem; cursor: pointer; text-decoration: none; transition: all 0.45s cubic-bezier(0.16,1,0.3,1); box-shadow: 0 0 24px rgba(139,0,0,0.25); }
+  .wa-btn:hover { padding: 0.8rem 1.3rem 0.8rem 0.8rem; border-color: var(--gold); box-shadow: 0 0 32px rgba(197,164,109,0.3); }
+  .wa-icon { width: 26px; height: 26px; flex-shrink: 0; fill: var(--gold); transition: transform 0.4s; }
+  .wa-btn:hover .wa-icon { transform: scale(1.1); }
+  .wa-label { font-size: 0.58rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); max-width: 0; overflow: hidden; white-space: nowrap; transition: max-width 0.45s cubic-bezier(0.16,1,0.3,1), margin 0.45s; margin-left: 0; }
+  .wa-btn:hover .wa-label { max-width: 130px; margin-left: 0.7rem; }
+
+  /* REVEAL */
+  .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.9s cubic-bezier(0.16,1,0.3,1), transform 0.9s cubic-bezier(0.16,1,0.3,1); }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .reveal-delay-1 { transition-delay: 0.12s; }
+  .reveal-delay-2 { transition-delay: 0.24s; }
+  .reveal-delay-3 { transition-delay: 0.36s; }
+  .reveal-delay-4 { transition-delay: 0.48s; }
+
+  /* MOBILE */
+  .mobile-menu { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.99); z-index: 999; flex-direction: column; align-items: center; justify-content: center; gap: 2.5rem; }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; font-weight: 300; color: var(--cream); text-decoration: none; letter-spacing: 0.08em; transition: color 0.3s; }
+  .mobile-menu a:hover { color: var(--gold); }
+  .mobile-close { position: absolute; top: 1.5rem; right: 2rem; font-size: 1.5rem; color: var(--gray); cursor: pointer; background: none; border: none; }
+
+  @media (max-width: 900px) {
+    .nav-links, .nav-social { display: none; }
+    .nav-toggle { display: flex; }
+    .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .about-visual { order: -1; max-width: 420px; margin: 0 auto; }
+    .about-stats { grid-template-columns: repeat(2,1fr); }
+    .services-grid { grid-template-columns: 1fr; }
+    .portfolio-grid { grid-template-columns: 1fr 1fr; }
+    .portfolio-item:nth-child(1),.portfolio-item:nth-child(2),.portfolio-item:nth-child(3),.portfolio-item:nth-child(4),.portfolio-item:nth-child(5) { grid-column: span 1; }
+    .portfolio-item:nth-child(1) .portfolio-img { aspect-ratio: 3/4; }
+    .why-grid { grid-template-columns: 1fr; }
+    .why-sticky { position: static; }
+    .booking-grid { grid-template-columns: 1fr; }
+    .social-grid { grid-template-columns: repeat(2,1fr); }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+    section { padding: 5rem 6vw; }
+    .testi-card { min-width: 300px; }
+  }
+  @media (max-width: 600px) {
+    .hero-cta { flex-direction: column; align-items: stretch; text-align: center; }
+    .btn-primary, .btn-outline { justify-content: center; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+    section { padding: 4rem 5vw; }
+    .social-handles { flex-direction: column; gap: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="nav" id="navbar">
+  <a href="#" class="nav-logo"><img src="https://i.imgur.com/CMYxUir.png" alt="LUVARÉN"></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Lookbook</a></li>
+    <li><a href="#testimonials">Clients</a></li>
+    <li><a href="#booking">Book</a></li>
+  </ul>
+  <div class="nav-social">
+    <a href="https://instagram.com/luvaren.legacy" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+    <a href="https://tiktok.com/@luvaren.legacy" target="_blank"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.26 8.26 0 004.84 1.55V6.79a4.85 4.85 0 01-1.07-.1z"/></svg></a>
+  </div>
+  <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" id="mobileClose">✕</button>
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#services" onclick="closeMobile()">Services</a>
+  <a href="#portfolio" onclick="closeMobile()">Lookbook</a>
+  <a href="#testimonials" onclick="closeMobile()">Clients</a>
+  <a href="#booking" onclick="closeMobile()">Book</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-photo"></div>
+  <div class="hero-content">
+    <img src="https://i.imgur.com/CMYxUir.png" alt="LUVARÉN" class="hero-logo-img">
+    <p class="hero-tagline">Crafted Precision. Defined Elegance.</p>
+    <p class="hero-sub">Est. Jakarta · Bespoke Atelier</p>
+    <div class="hero-cta">
+      <a href="#booking" class="btn-primary"><span>Book Consultation</span></a>
+      <a href="https://wa.me/628211877126?text=Hello%20LUVARÉN%2C%20I%20would%20like%20to%20inquire%20about%20your%20tailoring%20services." class="btn-outline" target="_blank">
+        <svg style="width:14px;height:14px;fill:currentColor;flex-shrink:0;" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span>Chat via WhatsApp</span>
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll"><span>Scroll</span><div class="scroll-line"></div></div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-img-frame">
+          <div class="about-img-corner tl"></div>
+          <div class="about-img-corner tr"></div>
+          <div class="about-img-corner bl"></div>
+          <div class="about-img-corner br"></div>
+          <img src="https://i.imgur.com/9ZV6zGE.jpg" alt="LUVARÉN fitting session">
+          <p class="about-img-caption">Private Consultation · Jakarta</p>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="subhead reveal">Our Heritage</p>
+        <h2 class="headline reveal reveal-delay-1">Where Fabric Meets<br><em style="font-style:italic;color:var(--gold);">Philosophy</em></h2>
+        <div class="gold-line-left reveal reveal-delay-2"></div>
+        <p class="body-text reveal reveal-delay-2">LUVARÉN was founded on a singular conviction: that a suit is not merely clothing — it is an assertion of identity, a silent declaration of character. Born in Jakarta and shaped by the finest tailoring traditions, each piece we create is a testament to the art of meticulous construction.</p>
+        <p class="body-text reveal reveal-delay-3" style="margin-top:1.2rem;">From the first consultation to the final stitch, every garment passes through the hands of master craftsmen who have dedicated their lives to perfecting the craft. We work with premium fabrics that honour both tradition and the wearer's vision.</p>
+        <p class="body-text reveal reveal-delay-4" style="margin-top:1.2rem;">This is not fast fashion. This is a covenant between maker and wearer — unhurried, uncompromised, unforgettable.</p>
+        <div class="about-stats reveal reveal-delay-2">
+          <div class="stat-item">
+            <span class="stat-number">800+</span>
+            <span class="stat-label">Bespoke Pieces</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Hand-Stitched</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-inner">
+    <div class="services-header">
+      <p class="subhead reveal">What We Offer</p>
+      <h2 class="headline reveal reveal-delay-1">The LUVARÉN<br>Experience</h2>
+      <div class="gold-line reveal reveal-delay-2"></div>
+    </div>
+    <div class="services-grid reveal">
+      <div class="service-card">
+        <span class="service-number">01</span>
+        <svg class="service-icon" viewBox="0 0 48 48" fill="none"><path d="M24 6 L36 14 L36 34 L24 42 L12 34 L12 14 Z" stroke="#C5A46D" stroke-width="1" fill="none"/><path d="M18 18 L30 18 M18 24 L30 24 M18 30 L26 30" stroke="#8B0000" stroke-width="1"/><circle cx="24" cy="6" r="2" fill="#C5A46D" opacity="0.6"/></svg>
+        <h3>Bespoke Tailoring</h3>
+        <p class="body-text">A completely individual garment constructed from scratch to your precise measurements, posture, and aesthetic vision. No two pieces are alike — this is the pinnacle of personal dressing.</p>
+        <div class="gold-line-left" style="margin-top:1.5rem;opacity:0.45;"></div>
+        <p style="font-size:0.62rem;letter-spacing:0.15em;color:var(--gold);margin-top:0.5rem;">Mulai Rp 2.000.000</p>
+      </div>
+      <div class="service-card">
+        <span class="service-number">02</span>
+        <svg class="service-icon" viewBox="0 0 48 48" fill="none"><rect x="10" y="10" width="28" height="28" stroke="#C5A46D" stroke-width="1" fill="none"/><rect x="14" y="14" width="20" height="20" stroke="#8B0000" stroke-width="0.5" fill="none"/><circle cx="24" cy="24" r="3" stroke="#C5A46D" stroke-width="1" fill="none"/></svg>
+        <h3>Custom Garment Production</h3>
+        <p class="body-text">Uniforms, ceremonial attire, capsule collections, and corporate wardrobes crafted at scale — without any compromise in quality, detail, or execution.</p>
+        <div class="gold-line-left" style="margin-top:1.5rem;opacity:0.45;"></div>
+        <p style="font-size:0.62rem;letter-spacing:0.15em;color:var(--gold);margin-top:0.5rem;">Custom Pricing · Consultation</p>
+      </div>
+      <div class="service-card">
+        <span class="service-number">03</span>
+        <svg class="service-icon" viewBox="0 0 48 48" fill="none"><path d="M8 40 Q16 20 24 24 Q32 28 40 8" stroke="#C5A46D" stroke-width="1" fill="none"/><circle cx="24" cy="24" r="8" stroke="#8B0000" stroke-width="1" fill="none"/><circle cx="24" cy="24" r="2" fill="#C5A46D" opacity="0.7"/></svg>
+        <h3>Fabric Selection Experience</h3>
+        <p class="body-text">An immersive private session with our fabric curator. From premium European wools to authentic Indonesian batik — we guide you to the perfect cloth for your vision.</p>
+        <div class="gold-line-left" style="margin-top:1.5rem;opacity:0.45;"></div>
+        <p style="font-size:0.62rem;letter-spacing:0.15em;color:var(--gold);margin-top:0.5rem;">Complimentary with booking</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- PORTFOLIO -->
+<section class="portfolio" id="portfolio">
+  <div class="section-inner">
+    <div class="portfolio-header">
+      <p class="subhead reveal">Our Work</p>
+      <h2 class="headline reveal reveal-delay-1">The Lookbook</h2>
+      <div class="gold-line reveal reveal-delay-2"></div>
+      <p class="body-text reveal reveal-delay-3" style="max-width:500px;margin:0 auto;">A curated selection of commissions that embody our philosophy of silent luxury and precise construction.</p>
+    </div>
+    <div class="portfolio-grid reveal">
+      <div class="portfolio-item">
+        <div class="portfolio-img">
+          <img src="https://i.imgur.com/Wg68sKV.jpg" alt="Timeless Craft" style="object-position: center top;">
+          <div class="portfolio-overlay"><div class="portfolio-info"><span>Signature Collection</span><h4>Timeless Craft</h4></div></div>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-img">
+          <img src="https://i.imgur.com/StizRwm.jpg" alt="Reserved for the Few" style="object-position: center top;">
+          <div class="portfolio-overlay"><div class="portfolio-info"><span>Premium Shirt</span><h4>Reserved for the Few</h4></div></div>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-img">
+          <img src="https://i.imgur.com/384FxFt.jpg" alt="The Midnight Coat">
+          <div class="portfolio-overlay"><div class="portfolio-info"><span>Bespoke Blazer</span><h4>The Midnight Coat</h4></div></div>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-img">
+          <img src="https://i.imgur.com/mcrmPgY.jpg" alt="Sand & Structure">
+          <div class="portfolio-overlay"><div class="portfolio-info"><span>Classic Tailoring</span><h4>Sand & Structure</h4></div></div>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-img">
+          <img src="https://i.imgur.com/jZn7A8E.jpg" alt="Batik Hejo" style="object-position: center 20%;">
+          <div class="portfolio-overlay"><div class="portfolio-info"><span>Heritage Batik</span><h4>Batik Hejo</h4></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- WHY -->
+<section class="why" id="why">
+  <div class="section-inner">
+    <div class="why-grid">
+      <div class="why-sticky">
+        <p class="subhead reveal">Our Distinction</p>
+        <h2 class="headline reveal reveal-delay-1">Why<br><em style="color:var(--gold);font-style:italic;">Choose</em><br>LUVARÉN</h2>
+        <div class="gold-line-left reveal reveal-delay-2"></div>
+        <p class="body-text reveal reveal-delay-3">Because the finest things are never rushed, and the most enduring impressions are made before a word is spoken.</p>
+      </div>
+      <div class="why-points">
+        <div class="why-point reveal"><span class="why-num">01</span><div><h3>Premium Heritage Materials</h3><p class="body-text">We work with premium mills and heritage fabrics — from European wools to authentic Indonesian batik — ensuring every cloth carries a legacy worth wearing.</p></div></div>
+        <div class="why-point reveal reveal-delay-1"><span class="why-num">02</span><div><h3>Master Craftsmanship</h3><p class="body-text">Each piece is constructed by artisans trained in classical hand-tailoring. Every lapel, seam, and buttonhole is executed with deliberate care — some garments require over 80 hours of skilled labour.</p></div></div>
+        <div class="why-point reveal reveal-delay-2"><span class="why-num">03</span><div><h3>Completely Personalised Service</h3><p class="body-text">From your first fitting to final delivery, you are attended to by a dedicated consultant. We take 22+ individual measurements and revisit every detail until the garment fits like a second skin.</p></div></div>
+        <div class="why-point reveal reveal-delay-3"><span class="why-num">04</span><div><h3>Discreet Client Relationship</h3><p class="body-text">Our clientele includes executives, public figures, and military officers. We maintain absolute confidentiality and build long-term relationships — not transactions.</p></div></div>
+        <div class="why-point reveal reveal-delay-4"><span class="why-num">05</span><div><h3>Lifetime Alterations</h3><p class="body-text">A LUVARÉN garment is a lifelong commitment. We provide lifetime alteration services, ensuring your piece continues to fit flawlessly through every season and chapter of your life.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="section-inner">
+    <div class="testimonials-header">
+      <p class="subhead reveal">Client Voices</p>
+      <h2 class="headline reveal reveal-delay-1">What Our Clients Say</h2>
+      <div class="gold-line reveal reveal-delay-2"></div>
+    </div>
+  </div>
+  <div style="overflow:hidden;padding:1rem 0 2rem;">
+    <div class="testi-track">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Saya tidak pernah menyangka kualitas jahitan lokal bisa sebaik ini. LUVARÉN benar-benar memahami kebutuhan saya — setiap detail dikerjakan dengan sempurna dan penuh dedikasi. Luar biasa."</p>
+        <div class="testi-author">
+          <div class="testi-avatar"><img src="https://i.imgur.com/bKP0Stp.jpg" alt="Agung"></div>
+          <div><p class="testi-name">Letnan Kol. Agung</p><p class="testi-role">TNI AU · Bespoke Suit Commission</p></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"The moment I put on my LUVARÉN suit for the board meeting, I understood what presence truly means. Every detail was considered — the roll of the lapel, the weight of the cloth. This is not tailoring. This is architecture."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AR</div>
+          <div><p class="testi-name">Ahmad R.</p><p class="testi-role">CEO, Jakarta · Bespoke Suit</p></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"I ordered my wedding suit from LUVARÉN after a single consultation. The process was effortless, the communication impeccable, and on the day itself — every single person asked me who made it. That says everything."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">RW</div>
+          <div><p class="testi-name">Rafi W.</p><p class="testi-role">Entrepreneur · Wedding Suit</p></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Our corporate uniform program was transformed by LUVARÉN. 40 pieces delivered on time, without a single compromise in quality. The team looks extraordinary. Our clients notice. Our staff feel it. Worth every rupiah."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">DN</div>
+          <div><p class="testi-name">Diana N.</p><p class="testi-role">COO, Hospitality Group · Corporate</p></div>
+        </div>
+      </div>
+      <!-- Loop duplicates -->
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Saya tidak pernah menyangka kualitas jahitan lokal bisa sebaik ini. LUVARÉN benar-benar memahami kebutuhan saya — setiap detail dikerjakan dengan sempurna dan penuh dedikasi. Luar biasa."</p>
+        <div class="testi-author">
+          <div class="testi-avatar"><img src="https://i.imgur.com/bKP0Stp.jpg" alt="Agung"></div>
+          <div><p class="testi-name">Letnan Kol. Agung</p><p class="testi-role">TNI AU · Bespoke Suit Commission</p></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"The moment I put on my LUVARÉN suit for the board meeting, I understood what presence truly means. Every detail was considered — the roll of the lapel, the weight of the cloth. This is not tailoring. This is architecture."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AR</div>
+          <div><p class="testi-name">Ahmad R.</p><p class="testi-role">CEO, Jakarta · Bespoke Suit</p></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"I ordered my wedding suit from LUVARÉN after a single consultation. The process was effortless, the communication impeccable, and on the day itself — every single person asked me who made it. That says everything."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">RW</div>
+          <div><p class="testi-name">Rafi W.</p><p class="testi-role">Entrepreneur · Wedding Suit</p></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Our corporate uniform program was transformed by LUVARÉN. 40 pieces delivered on time, without a single compromise in quality. The team looks extraordinary. Our clients notice. Our staff feel it. Worth every rupiah."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">DN</div>
+          <div><p class="testi-name">Diana N.</p><p class="testi-role">COO, Hospitality Group · Corporate</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- SOCIAL -->
+<section class="social" id="social">
+  <div class="section-inner">
+    <div class="social-header">
+      <p class="subhead reveal">Follow Our Craft</p>
+      <h2 class="headline reveal reveal-delay-1">@luvaren.legacy</h2>
+      <div class="gold-line reveal reveal-delay-2"></div>
+      <p class="body-text reveal reveal-delay-3" style="max-width:460px;margin:0 auto;">Behind every finished garment lies a story of threads, hands, and hours. Follow our journey on social media.</p>
+    </div>
+    <div class="social-grid reveal">
+      <div class="social-post"><img src="https://i.imgur.com/AGWyNiQ.jpg" alt="LUVARÉN"><div class="social-post-overlay"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="white"/></svg></div></div>
+      <div class="social-post"><img src="https://i.imgur.com/kW0YZRI.jpg" alt="LUVARÉN"><div class="social-post-overlay"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.26 8.26 0 004.84 1.55V6.79a4.85 4.85 0 01-1.07-.1z" fill="white"/></svg></div></div>
+      <div class="social-post"><img src="https://i.imgur.com/OUWxnB0.jpg" alt="LUVARÉN"><div class="social-post-overlay"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="white"/></svg></div></div>
+      <div class="social-post"><img src="https://i.imgur.com/51iy6Xp.jpg" alt="LUVARÉN"><div class="social-post-overlay"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.26 8.26 0 004.84 1.55V6.79a4.85 4.85 0 01-1.07-.1z" fill="white"/></svg></div></div>
+    </div>
+    <div class="social-handles reveal">
+      <a href="https://instagram.com/luvaren.legacy" class="social-handle" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>@luvaren.legacy</a>
+      <a href="https://tiktok.com/@luvaren.legacy" class="social-handle" target="_blank"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.26 8.26 0 004.84 1.55V6.79a4.85 4.85 0 01-1.07-.1z"/></svg>@luvaren.legacy</a>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- BOOKING -->
+<section class="booking" id="booking">
+  <div class="section-inner">
+    <div class="booking-grid">
+      <div>
+        <p class="subhead reveal">Private Consultations</p>
+        <h2 class="headline reveal reveal-delay-1">Begin Your<br><em style="color:var(--gold);font-style:italic;">Commission</em></h2>
+        <div class="gold-line-left reveal reveal-delay-2"></div>
+        <p class="body-text reveal reveal-delay-2">Every LUVARÉN commission begins with a private consultation — an unhurried conversation about your vision, your lifestyle, and the impression you wish to leave.</p>
+        <p class="body-text reveal reveal-delay-3" style="margin-top:1rem;">Our atelier operates by appointment only. Consultations are available in-person at our Jakarta studio, or via video call for clients across Indonesia.</p>
+        <div style="margin-top:2.5rem;display:flex;flex-direction:column;gap:1rem;" class="reveal reveal-delay-3">
+          <div style="display:flex;align-items:center;gap:1rem;"><div style="width:1px;height:40px;background:var(--red);flex-shrink:0;"></div><div><p style="font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:0.2rem;">Response Time</p><p style="font-size:0.82rem;color:var(--gray-light);">Within 24 hours, guaranteed</p></div></div>
+          <div style="display:flex;align-items:center;gap:1rem;"><div style="width:1px;height:40px;background:var(--red);flex-shrink:0;"></div><div><p style="font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:0.2rem;">Consultation</p><p style="font-size:0.82rem;color:var(--gray-light);">Complimentary, no obligation</p></div></div>
+          <div style="display:flex;align-items:center;gap:1rem;"><div style="width:1px;height:40px;background:var(--red);flex-shrink:0;"></div><div><p style="font-size:0.58rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:0.2rem;">WhatsApp</p><p style="font-size:0.82rem;color:var(--gray-light);">+62 821 1877 126</p></div></div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div id="formSuccess" style="display:none;text-align:center;padding:3rem 2rem;">
+          <div style="width:50px;height:50px;border:1px solid var(--gold);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--gold);">✓</div>
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--cream);margin-bottom:1rem;">Thank You</h3>
+          <p class="body-text">Your enquiry has been received. We will be in touch within 24 hours to arrange your consultation.</p>
+        </div>
+        <div id="bookingForm">
+          <div class="form-group"><label class="form-label">Full Name</label><input type="text" class="form-input" id="fieldName" placeholder="Your name"></div>
+          <div class="form-group"><label class="form-label">Contact (Phone / Email)</label><input type="text" class="form-input" id="fieldContact" placeholder="your@email.com or +62..."></div>
+          <div class="form-group">
+            <label class="form-label">Service Required</label>
+            <select class="form-select" id="fieldService">
+              <option value="" disabled selected>Pilih layanan</option>
+              <option>Setelan Jas</option>
+              <option>Batik Custom</option>
+              <option>Kemeja Custom</option>
+              <option>Seragam Perusahan</option>
+              <option>Seragam Pabrik</option>
+              <option>Kaos Polo / T-Shirt</option>
+              <option>Sample Produk</option>
+              <option>Lainnya</option>
+            </select>
+          </div>
+          <div class="form-group"><label class="form-label">Your Message</label><textarea class="form-textarea" id="fieldMessage" placeholder="Tell us about your vision, occasion, or any questions you have..."></textarea></div>
+          <button class="btn-primary" style="width:100%;justify-content:center;margin-top:0.5rem;" onclick="submitForm()"><span>Send Your Enquiry</span></button>
+          <p style="font-size:0.6rem;color:var(--gray);margin-top:1rem;text-align:center;letter-spacing:0.08em;">All enquiries are treated with the utmost discretion.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo"><img src="https://i.imgur.com/CMYxUir.png" alt="LUVARÉN"></div>
+      <p class="footer-tagline">Crafted Precision. Defined Elegance.</p>
+      <p class="body-text" style="max-width:280px;">A private atelier dedicated to bespoke tailoring and the enduring art of exceptional garment construction.</p>
+      <div class="footer-social">
+        <a href="https://instagram.com/luvaren.legacy" class="footer-social-link" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+        <a href="https://tiktok.com/@luvaren.legacy" class="footer-social-link" target="_blank"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.26 8.26 0 004.84 1.55V6.79a4.85 4.85 0 01-1.07-.1z"/></svg></a>
+        <a href="https://wa.me/628211877126?text=Hello%20LUVARÉN%2C%20I%20would%20like%20to%20inquire%20about%20your%20tailoring%20services." class="footer-social-link" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul class="footer-links">
+        <li><a href="#about">About LUVARÉN</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Lookbook</a></li>
+        <li><a href="#testimonials">Client Voices</a></li>
+        <li><a href="#booking">Book Consultation</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul class="footer-links">
+        <li><a href="#services">Bespoke Tailoring</a></li>
+        <li><a href="#services">Custom Production</a></li>
+        <li><a href="#services">Fabric Selection</a></li>
+        <li><a href="#booking">Corporate Programs</a></li>
+        <li><a href="#booking">Wedding & Ceremony</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <div class="footer-contact-item"><span>WhatsApp</span><span>+62 821 1877 126</span></div>
+      <div class="footer-contact-item"><span>Instagram</span><span>@luvaren.legacy</span></div>
+      <div class="footer-contact-item"><span>TikTok</span><span>@luvaren.legacy</span></div>
+      <div class="footer-contact-item"><span>Studio</span><span>Jakarta, Indonesia</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 LUVARÉN. All rights reserved. Crafted with precision.</p>
+    <ul class="footer-bottom-links"><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li></ul>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/628211877126?text=Hello%20LUVARÉN%2C%20I%20would%20like%20to%20inquire%20about%20your%20tailoring%20services." class="wa-float" target="_blank">
+  <div class="wa-btn">
+    <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="wa-label">Consult Now</span>
+  </div>
+</a>
+
+<script>
+  const nav = document.getElementById('navbar');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 80), { passive: true });
+
+  document.getElementById('navToggle').addEventListener('click', () => document.getElementById('mobileMenu').classList.add('open'));
+  document.getElementById('mobileClose').addEventListener('click', () => document.getElementById('mobileMenu').classList.remove('open'));
+  function closeMobile() { document.getElementById('mobileMenu').classList.remove('open'); }
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  function submitForm() {
+    const name = document.getElementById('fieldName').value.trim();
+    const contact = document.getElementById('fieldContact').value.trim();
+    const service = document.getElementById('fieldService').value;
+    const msg = document.getElementById('fieldMessage').value.trim();
+    if (!name || !contact || !service) {
+      [{ el: document.getElementById('fieldName'), val: name }, { el: document.getElementById('fieldContact'), val: contact }, { el: document.getElementById('fieldService'), val: service }]
+        .forEach(({ el, val }) => { if (!val) { el.style.borderColor = 'var(--red)'; setTimeout(() => el.style.borderColor = '', 2000); } });
+      return;
+    }
+    document.getElementById('bookingForm').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+    const waMsg = encodeURIComponent(`Hello LUVARÉN, I would like to inquire about your tailoring services.\n\nName: ${name}\nContact: ${contact}\nService: ${service}${msg ? '\nMessage: ' + msg : ''}`);
+    setTimeout(() => window.open('https://wa.me/628211877126?text=' + waMsg, '_blank'), 800);
+  }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && document.activeElement.closest('#bookingForm') && document.activeElement.tagName !== 'TEXTAREA') submitForm();
+  });
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"7f7b0fd8732c4326aae4b9d58d5c514a","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

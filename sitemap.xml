@@ -1,13 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-  <loc>https://luvarenlegacy.site/</loc>
-</url>
+  <!-- HOMEPAGE -->
+  <url>
+    <loc>https://luvarenlegacy.site/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
 
-<url>
-    <loc>https://luvarenlegacy.site/garment</loc>
-</url>
-  
+  <!-- GARMENT -->
+  <url>
+    <loc>https://luvarenlegacy.site/garment/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- LOCATIONS -->
+  <url>
+    <loc>https://luvarenlegacy.site/locations/jakarta/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://luvarenlegacy.site/locations/tangerang/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://luvarenlegacy.site/locations/bekasi/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://luvarenlegacy.site/locations/depok/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
 </urlset>

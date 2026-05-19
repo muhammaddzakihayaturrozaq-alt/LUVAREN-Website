@@ -1,0 +1,65 @@
+User-agent: *
+Allow: /
+
+# === IZINKAN SEMUA HALAMAN PENTING ===
+Allow: /index.html
+Allow: /about/
+Allow: /services/
+Allow: /services/jasa-tailor/
+Allow: /services/jasa-konveksi/
+Allow: /services/seragam-kantor/
+Allow: /services/kaos-custom/
+Allow: /locations/
+Allow: /locations/jakarta/
+Allow: /locations/tangerang/
+Allow: /locations/bekasi/
+Allow: /locations/depok/
+Allow: /blog/
+Allow: /blog/cara-memilih-konveksi/
+Allow: /blog/jenis-bahan-kaos/
+Allow: /blog/harga-seragam-kantor/
+Allow: /portfolio/
+Allow: /sitemap.xml
+
+# === BLOKIR FOLDER TIDAK PERLU DIINDEX ===
+Disallow: /assets/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /draft/
+Disallow: /temp/
+Disallow: /*.json$
+Disallow: /*.log$
+
+# === GOOGLEBOT (Google Search — paling penting untuk SEO lokal) ===
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# === GOOGLEBOT IMAGE (penting untuk portfolio & lookbook) ===
+User-agent: Googlebot-Image
+Allow: /assets/images/
+Allow: /portfolio/
+
+# === BINGBOT ===
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# === BLOKIR BOT TIDAK BERGUNA ===
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+# === SITEMAP ===
+Sitemap: https://luvarenlegacy.site/sitemap.xml

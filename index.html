@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="trk9WZPt5SKUr6_z8JyskZRkMOJWz7ZouuBaO3esoQY" />
-<title>LUVARÉN | Tailor & Garmen premium jabodetabek</title>
+<title>LUVARÉN | Premium Garment Manufacturer Jakarta</title>
   
 <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
   
@@ -21,7 +21,7 @@
 <meta property="og:url" content="https://luvarenlegacy.site/" />
 
 <meta property="og:image" content="https://luvarenlegacy.site/favicon.png" />
-<meta name="description" content="LUVARÉN — Bespoke tailoring and custom garments of unparalleled craftsmanship. Guaranteed Quality. Premium Results.">
+<meta name="description" content="LUVARÉN — Bespoke tailoring and custom garments of unparalleled craftsmanship. Crafted Precision. Defined Elegance.">
 <meta name="keywords" content="LUVARÉN, bespoke tailor Jakarta, custom suit Indonesia, tailor made suit, blazer custom, batik premium, tailoring premium, atelier Jakarta">
 <meta name="author" content="LUVARÉN Atelier">
 <meta name="theme-color" content="#8B0000">
@@ -31,7 +31,7 @@
 <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="LUVARÉN">
-<meta property="og:title" content="LUVARÉN — Kualitas Premium. Hasil Elegan.">
+<meta property="og:title" content="LUVARÉN — Crafted Precision. Defined Elegance.">
 <meta property="og:description" content="Bespoke atelier di Jakarta. Setiap jahitan adalah deklarasi karakter — 800+ busana bespoke, 100% hand-stitched, dengan kain premium Eropa & batik pilihan.">
 <meta property="og:image" content="https://i.imgur.com/CMYxUir.png">
 <meta property="og:image:secure_url" content="https://i.imgur.com/CMYxUir.png">
@@ -43,12 +43,12 @@
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="LUVARÉN — Kualitas Terjamin. Hasil Elegan.">
+<meta name="twitter:title" content="LUVARÉN — Crafted Precision. Defined Elegance.">
 <meta name="twitter:description" content="Bespoke atelier di Jakarta. Setiap jahitan adalah deklarasi karakter — 800+ busana bespoke, 100% hand-stitched.">
 <meta name="twitter:image" content="https://i.imgur.com/CMYxUir.png">
 <meta name="twitter:image:alt" content="LUVARÉN — Bespoke Atelier">
 
-<title>LUVARÉN — Bespoke Tailor. Premium Garment.</title>
+<title>LUVARÉN — Crafted Precision. Defined Elegance.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
@@ -81,6 +81,48 @@
   .gold-line { width: 60px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); margin: 1.5rem auto; }
   .gold-line-left { width: 60px; height: 1px; background: linear-gradient(90deg, var(--gold), transparent); margin: 1.5rem 0; }
   .section-divider { width: 100%; height: 1px; background: linear-gradient(90deg, transparent, var(--gold-dim), transparent); }
+
+  /* LOCATIONS SECTION */
+  .location-seo { padding: 6rem 4vw; background: var(--near-black); }
+  .loc-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(197,164,109,0.12); }
+  .loc-card {
+    background: var(--card);
+    padding: 2.5rem 2rem;
+    text-decoration: none;
+    color: var(--cream);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: 1px solid transparent;
+    transition: background 0.35s, border-color 0.35s;
+    position: relative;
+    overflow: hidden;
+  }
+  .loc-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 2px;
+    background: linear-gradient(90deg, var(--red), var(--gold));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+  .loc-card:hover { background: #161616; border-color: rgba(197,164,109,0.2); }
+  .loc-card:hover::before { transform: scaleX(1); }
+  .loc-number { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 300; color: rgba(197,164,109,0.15); line-height: 1; margin-bottom: 0.5rem; }
+  .loc-icon { font-size: 1.5rem; margin-bottom: 0.25rem; }
+  .loc-name { font-family: 'Cormorant Garamond', serif; font-size: 1.7rem; font-weight: 300; color: var(--cream); margin-bottom: 0.25rem; }
+  .loc-areas { font-size: 0.72rem; color: var(--gray); line-height: 1.7; letter-spacing: 0.04em; margin-bottom: 1rem; flex: 1; }
+  .loc-cta { font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); transition: letter-spacing 0.3s; }
+  .loc-card:hover .loc-cta { letter-spacing: 0.25em; }
+  @media (max-width: 768px) {
+    .loc-grid { grid-template-columns: repeat(2, 1fr); }
+    .location-seo { padding: 4rem 5vw; }
+  }
+  @media (max-width: 480px) {
+    .loc-grid { grid-template-columns: 1fr; }
+  }
 
   /* NAVBAR */
   .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1.2rem 4vw; display: flex; align-items: center; justify-content: space-between; transition: background 0.5s, padding 0.4s; }
@@ -373,7 +415,7 @@ Premium Garment Manufacturer Jakarta & Jabodetabek
     
     <li>
       <a href="./garment/" class="garment-btn">
-        MENUJU GARMEN
+        LUVAREN GARMENT
       </a>
     </li>
     
@@ -406,13 +448,13 @@ Premium Garment Manufacturer Jakarta & Jabodetabek
   <div class="hero-photo"></div>
   <div class="hero-content">
     <img src="https://i.imgur.com/CMYxUir.png" alt="LUVARÉN" class="hero-logo-img">
-    <p class="hero-tagline">BESPOKE TAILOR. PREMIUM GARMENT.</p>
-    <p class="hero-sub">JAKARTA · BOGOR · DEPOK · TANGERANG · BEKASI</p>
+    <p class="hero-tagline">Crafted Precision. Defined Elegance.</p>
+    <p class="hero-sub">Est. Jakarta · Bespoke Atelier</p>
     <div class="hero-cta">
       <a href="#booking" class="btn-primary"><span>Book Consultation</span></a>
      <a href="./garment/" class="btn-outline">
 
-       <span>GARMEN ➔</span>
+       <span>Explore Garment</span>
 
      </a>
     </div>
@@ -458,14 +500,45 @@ Premium Garment Manufacturer Jakarta & Jabodetabek
 
 <div class="section-divider"></div>
 
-<section class="location-seo">
-
-  <h2>Premium Garment & Tailoring Manufacturer in Jakarta & Jabodetabek</h2>
-
-  <p>
-    LUVARÉN provides premium garment manufacturing services for modern fashion brands across Jakarta, Tangerang, BSD, Serpong, and the greater Jabodetabek area.
-  </p>
-
+<section class="location-seo" id="locations">
+  <div class="section-inner">
+    <div style="text-align:center; margin-bottom: 3rem;">
+      <p class="subhead reveal">Area Layanan</p>
+      <h2 class="headline reveal reveal-delay-1">Melayani Seluruh<br><em style="font-style:italic;color:var(--gold);">Jabodetabek</em></h2>
+      <div class="gold-line reveal reveal-delay-2"></div>
+      <p class="body-text reveal reveal-delay-3" style="max-width:520px;margin:0 auto;">LUVARÉN hadir untuk klien di seluruh Jakarta, Tangerang, Bekasi, dan Depok — konsultasi bespoke hingga produksi konveksi skala besar.</p>
+    </div>
+    <div class="loc-grid reveal">
+      <a href="/locations/jakarta/" class="loc-card">
+        <div class="loc-number">01</div>
+        <div class="loc-icon">🏙️</div>
+        <h3 class="loc-name">Jakarta</h3>
+        <p class="loc-areas">Sudirman · SCBD · Kemang<br>Menteng · Kelapa Gading</p>
+        <span class="loc-cta">Lihat Layanan →</span>
+      </a>
+      <a href="/locations/tangerang/" class="loc-card">
+        <div class="loc-number">02</div>
+        <div class="loc-icon">🌿</div>
+        <h3 class="loc-name">Tangerang</h3>
+        <p class="loc-areas">BSD · Serpong · Alam Sutera<br>Bintaro · Pamulang</p>
+        <span class="loc-cta">Lihat Layanan →</span>
+      </a>
+      <a href="/locations/bekasi/" class="loc-card">
+        <div class="loc-number">03</div>
+        <div class="loc-icon">🏢</div>
+        <h3 class="loc-name">Bekasi</h3>
+        <p class="loc-areas">Harapan Indah · Summarecon<br>Grand Galaxy · Cikarang</p>
+        <span class="loc-cta">Lihat Layanan →</span>
+      </a>
+      <a href="/locations/depok/" class="loc-card">
+        <div class="loc-number">04</div>
+        <div class="loc-icon">🌇</div>
+        <h3 class="loc-name">Depok</h3>
+        <p class="loc-areas">Margonda · Cinere · Sawangan<br>Beji · Pancoran Mas</p>
+        <span class="loc-cta">Lihat Layanan →</span>
+      </a>
+    </div>
+  </div>
 </section>
   
 <!-- SERVICES -->
@@ -735,7 +808,7 @@ Premium Garment Manufacturer Jakarta & Jabodetabek
   <div class="footer-grid">
     <div>
       <div class="footer-logo"><img src="https://i.imgur.com/CMYxUir.png" alt="LUVARÉN"></div>
-      <p class="footer-tagline">BESPOKE TAILOR. PREMIUM GARMENT.</p>
+      <p class="footer-tagline">Crafted Precision. Defined Elegance.</p>
       <p class="body-text" style="max-width:280px;">A private atelier dedicated to bespoke tailoring and the enduring art of exceptional garment construction.</p>
       <div class="footer-social">
         <a href="https://instagram.com/luvaren.legacy" class="footer-social-link" target="_blank"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
@@ -820,4 +893,3 @@ Premium Garment Manufacturer Jakarta & Jabodetabek
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"7f7b0fd8732c4326aae4b9d58d5c514a","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
-

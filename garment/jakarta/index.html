@@ -164,8 +164,27 @@
 
     /* ======================== AREA HERO ======================== */
     .area-hero { min-height: 55vh; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; background: var(--black); }
-    .area-hero-bg { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(139,26,26,0.15) 0%, transparent 60%), linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%); }
-    .area-hero-pattern { position: absolute; inset: 0; opacity: 0.04; background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+    .area-hero-bg {
+      position:absolute;
+      inset:0;
+      background-image:
+        linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.65)),
+        url('https://res.cloudinary.com/denrtx3a9/image/upload/v1780407094/luvaren_sampul_ikckrr.png');
+      background-repeat:no-repeat;
+      background-position:center center;
+      background-size:contain;
+      background-color:#000;
+    }
+    @media (max-width:768px){
+      .area-hero-bg{
+        background-size:contain;
+        background-position:center top;
+      }
+      .area-hero{
+        min-height:70vh;
+      }
+    }
+    .area-hero-pattern { display:none; }
     .area-hero-line { position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--crimson-bright), transparent); }
     .area-hero-content { position: relative; z-index: 2; text-align: center; padding: 120px 20px 60px; max-width: 800px; }
     .area-breadcrumb { font-size: 11px; letter-spacing: 3px; color: var(--silver-dark); text-transform: uppercase; margin-bottom: 20px; }

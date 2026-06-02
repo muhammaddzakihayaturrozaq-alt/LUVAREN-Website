@@ -1203,5 +1203,15 @@
 
 })();
 </script>
+
+<script>
+window.addEventListener('load', function() {
+  const loader = document.getElementById('loading-screen');
+  if (loader) {
+    setTimeout(() => loader.classList.add('hidden'), 2200);
+  }
+});
+</script>
 </body>
+
 </html>

@@ -124,6 +124,60 @@
     .loc-grid { grid-template-columns: 1fr; }
   }
 
+  /* TRUSTED CLIENTS */
+  .trusted-clients { background: var(--near-black); padding: 4.5rem 8vw 5rem; }
+  .trusted-clients .headline { font-size: clamp(1.7rem, 3.4vw, 2.6rem); }
+  .clients-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.75rem; margin-top: 3rem; }
+  .client-logo {
+    background: var(--cream);
+    border: 1px solid rgba(197,164,109,0.18);
+    border-radius: 6px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.1rem 1.3rem;
+    transition: border-color 0.4s, transform 0.4s, box-shadow 0.4s;
+  }
+  .client-logo:hover { border-color: var(--gold); transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0,0,0,0.35); }
+  /* Base sizing: logo should dominate the card. max-width is a % of the
+     card, max-height is a fixed px cap (scaled down responsively below).
+     Each logo gets its own values so shape differences don't shrink
+     everything down to the smallest common denominator. */
+  .client-logo img {
+    max-width: var(--logo-mw, 85%);
+    max-height: var(--logo-mh, 85px);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+  }
+  .client-logo:hover img { transform: scale(1.05); }
+
+  /* Individual logo scale — horizontal logos get wide %, compact/vertical
+     logos get a taller max-height instead of being forced to fill width */
+  .client-logo--angkasa   { --logo-mw: 85%; --logo-mh: 96px; }
+  .client-logo--bec       { --logo-mw: 85%; --logo-mh: 96px; }
+  .client-logo--pertamina { --logo-mw: 90%; --logo-mh: 100px; }
+  .client-logo--pelita    { --logo-mw: 90%; --logo-mh: 96px; }
+  .client-logo--bni       { --logo-mw: 87%; --logo-mh: 92px; }
+  .client-logo--barry     { --logo-mw: 88%; --logo-mh: 98px; }
+  .client-logo--ui        { --logo-mw: 80%; --logo-mh: 102px; }
+  .client-logo--brin      { --logo-mw: 80%; --logo-mh: 102px; }
+
+  @media (max-width: 900px) {
+    .clients-grid { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+    .client-logo { height: 110px; padding: 0.9rem 1rem; }
+    .client-logo img { max-height: calc(var(--logo-mh, 85px) * 0.8); }
+    .trusted-clients { padding: 3.5rem 6vw 4rem; }
+  }
+  @media (max-width: 600px) {
+    .clients-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    .client-logo { height: 100px; padding: 0.75rem 0.85rem; }
+    .client-logo img { max-height: calc(var(--logo-mh, 85px) * 0.7); }
+    .trusted-clients { padding: 3rem 5vw 3.5rem; }
+  }
+
   /* NAVBAR */
   .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1.2rem 4vw; display: flex; align-items: center; justify-content: space-between; transition: background 0.5s, padding 0.4s; }
   .nav.scrolled { background: rgba(0,0,0,0.97); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); padding: 0.7rem 4vw; border-bottom: 1px solid rgba(197,164,109,0.1); }
@@ -460,6 +514,44 @@ Premium Garment Manufacturer Jakarta & Jabodetabek
     </div>
   </div>
   <div class="hero-scroll"><span>Scroll</span><div class="scroll-line"></div></div>
+</section>
+
+<!-- TRUSTED CLIENTS -->
+<section class="trusted-clients" id="trusted-clients">
+  <div class="section-inner">
+    <div style="text-align:center; margin-bottom: 1rem;">
+      <p class="subhead reveal">Trusted By</p>
+      <h2 class="headline reveal reveal-delay-1">Dipercaya Berbagai Perusahaan &amp; Instansi</h2>
+      <div class="gold-line reveal reveal-delay-2"></div>
+      <p class="body-text reveal reveal-delay-3" style="max-width:640px;margin:0 auto;">LUVARÉN dipercaya oleh berbagai perusahaan dan institusi dalam menghadirkan kebutuhan seragam kerja, apparel, dan garment custom dengan standar kualitas dan pengerjaan yang profesional.</p>
+    </div>
+    <div class="clients-grid reveal">
+      <div class="client-logo client-logo--angkasa">
+        <img src="https://res.cloudinary.com/denrtx3a9/image/upload/e_trim/v1786732468/Angkasa_Pura_Supports_o6hslw.webp" alt="Angkasa Pura Supports">
+      </div>
+      <div class="client-logo client-logo--bec">
+        <img src="https://res.cloudinary.com/denrtx3a9/image/upload/e_trim/v1786732767/Untitled_design_16_ji4ra3.png" alt="BEC — Bumi Etam Chemical">
+      </div>
+      <div class="client-logo client-logo--pertamina">
+        <img src="https://res.cloudinary.com/denrtx3a9/image/upload/e_trim/v1786733058/Untitled_design_18_yjfgwi.png" alt="Pertamina">
+      </div>
+      <div class="client-logo client-logo--pelita">
+        <img src="https://res.cloudinary.com/denrtx3a9/image/upload/e_trim/v1786732876/lg-655fcb613597a-pelita-air_lfibsx.png" alt="Pelita Air">
+      </div>
+      <div class="client-logo client-logo--bni">
+        <img src="https://res.cloudinary.com/denrtx3a9/image/upload/e_trim/v1786732872/bank-bni-logo-png_seeklogo-355606_c6hdxs.png" alt="BNI">
+      </div>
+      <div class="client-logo client-logo--barry">
+        <img src="https://res.cloudinary.com/denrtx3a9/image/upload/e_trim/v1786732899/Barry_Callebaut_logo.svg_sr2ykn.webp" alt="Barry Callebaut">
+      </div>
+      <div class="client-logo client-logo--ui">
+        <img src="https://res.cloudinary.com/denrtx3a9/image/upload/e_trim/v1786732872/lg-659748ef59045-universitas-indonesia-ui_onb1yx.webp" alt="Universitas Indonesia">
+      </div>
+      <div class="client-logo client-logo--brin">
+        <img src="https://res.cloudinary.com/denrtx3a9/image/upload/e_trim/v1786732468/Main_Logo_of_National_Research_and_Innovation_Agency_of_Indonesia.svg_sviw2f.webp" alt="BRIN — Badan Riset dan Inovasi Nasional">
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- ABOUT -->
